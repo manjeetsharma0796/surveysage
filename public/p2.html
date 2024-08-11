@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poll Pulse</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .poll-container {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            width: 300px;
+        }
+        .poll-question {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+        .poll-option {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+            cursor: pointer;
+            padding: 10px;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+        .poll-option:hover {
+            background-color: #e0e0e0;
+        }
+        .poll-option span {
+            font-size: 16px;
+        }
+        .poll-option .percent {
+            font-size: 14px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+
+<div class="poll-container">
+    <div class="poll-question" id="poll-question"></div>
+    <div id="poll-options"></div>
+</div>
+
+<script>
+    const pollData = {
+        question: "What is your favorite color?",
+        options: [
+            {option: "Red", votes: 120},
+            {option: "Blue", votes: 150},
+            {option: "Green", votes: 90},
+            {option: "Yellow", votes: 60}
+        ]
+    };
+
+    const pollQuestionElem = document.getElementById('poll-question');
+    const pollOptionsElem = document.getElementById('poll-options');
+
+    let totalVotes = pollData.options.reduce((sum, option) => sum + option.votes, 0);
+
+    pollQuestionElem.innerText = pollData.question;
+
+    pollData.options.forEach((option, index) => {
+        const optionElem = document.createElement('div');
+        optionElem.className = 'poll-option';
+        optionElem.innerHTML = `
+            <span>${option.option}</span>
+            <span class="percent">${((option.votes / totalVotes) * 100).toFixed(1)}%</span>
+        `;
+        optionElem.addEventListener('click', () => {
+            pollData.options[index].votes++;
+            totalVotes++;
+            updatePoll();
+        });
+        pollOptionsElem.appendChild(optionElem);
+    });
+
+    function updatePoll() {
+        pollOptionsElem.innerHTML = '';
+        pollData.options.forEach((option, index) => {
+            const optionElem = document.createElement('div');
+            optionElem.className = 'poll-option';
+            optionElem.innerHTML = `
+                <span>${option.option}</span>
+                <span class="percent">${((option.votes / totalVotes) * 100).toFixed(1)}%</span>
+            `;
+            optionElem.addEventListener('click', () => {
+                alert('You have already voted!');
+            });
+            pollOptionsElem.appendChild(optionElem);
+        });
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Poll Pulse</title>
+    <link rel="stylesheet" href="ren.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo"><img src="./logo.svg" alt="" /></div>
+      <nav class="nav">
+        <ul>
+          <li><a href="/create">Create Poll</a></li>
+          <li><a href="/view-polls">View Polls</a></li>
+          <li><a href="/profile">Profile</a></li>
+          <li><a href="#about">About</a></li>
+          <button id="connect-button" class="neon-button">
+            Connect to MetaMask
+          </button>
+        </ul>
+      </nav>
+      <div id="interaction-count-panel" class="interaction-count">
+        Interactions: 0
+      </div>
+    </header>
+    <main class="main-content">
+      <section id="profile" class="content-section">
+        <h2 class="neon">Profile Page</h2>
+        <div class="profile-info">
+          <div class="user-info">
+            <h3>User:</h3>
+            <p id="user-wallet">Wallet Address</p>
+          </div>
+          <div class="interaction-info">
+            <h3>Questions Interacted:</h3>
+            <p id="interaction-count">0</p>
+          </div>
+          <div class="claimable-info">
+            <h3>Claimable Amount:</h3>
+            <p id="claimable-amount">$0.00</p>
+          </div>
+          <div class="withdraw-section">
+            <button id="withdraw-button" class="neon-button">Withdraw</button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer-section">
+        <h3>Company</h3>
+        <ul>
+          <li>About Us</li>
+          <li>Our Team</li>
+          <li>Careers</li>
+          <li>News</li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Products</h3>
+        <ul>
+          <li>Web3 Polls</li>
+          <li>Blockchain Analytics</li>
+          <li>Decentralized Apps</li>
+          <li>Crypto Wallet</li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Resources</h3>
+        <ul>
+          <li>Blog</li>
+          <li>Documentation</li>
+          <li>Developer Tools</li>
+          <li>Community</li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Legal</h3>
+        <ul>
+          <li>Privacy Policy</li>
+          <li>Terms of Service</li>
+          <li>Cookie Policy</li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Contact</h3>
+        <ul>
+          <li>Support</li>
+          <li>Sales</li>
+          <li>Partnerships</li>
+        </ul>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+    <script src="app.js"></script>
+    <script src="profile.js"></script>
+  </body>
+</html>

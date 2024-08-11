@@ -1,0 +1,131 @@
+body {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+}
+
+.header {
+    background-color: #d32f2f;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.logo {
+    /* font-size: 24px; */
+    
+}
+
+.logo {
+    width: 50px;                /* Width of the circle */
+    height: 50px;               /* Height of the circle */
+    border-radius: 50%;          /* Makes the div a circle */
+    overflow: hidden;            /* Ensures the image stays within the circle */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+}
+
+.logo img {
+    width: 100%;                 /* Image will fill the entire circle */
+    height: 100%;                /* Image will fill the entire circle */
+    object-fit: cover;           /* Ensures the image covers the circle without distortion */
+}
+
+.logo:hover {
+    box-shadow: 0 6px 12px rgb(255, 255, 255); /* Slightly stronger shadow on hover */
+}
+
+.nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.nav ul li {
+    margin: 0 15px;
+}
+
+.nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.neon-button {
+    padding: 10px 20px;
+    border: 2px solid #000;
+    border-radius: 5px;
+    background-color: #ffffff;
+    color: #3b3b3b;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.neon-button:hover {
+    background-color: #c23f38;
+    color: #000;
+}
+
+.main-content {
+    padding: 20px;
+    text-align: center;
+}
+
+.hero {
+    padding: 50px 20px;
+    border-bottom: 2px solid #0ff;
+}
+
+.content-section {
+    padding: 20px;
+    border-bottom: 1px solid #444;
+}
+
+input[type="text"] {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid #0ff;
+    border-radius: 5px;
+    background-color: #000;
+    color: #0ff;
+}
+
+.poll {
+    border: 2px solid #0ff;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0;
+    text-align: left;
+}
+
+.footer {
+    background-color: #f3f3f3;
+    color: #333;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-section {
+    width: 20%;
+}
+
+.footer-section h3 {
+    margin-top: 0;
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin: 5px 0;
+}

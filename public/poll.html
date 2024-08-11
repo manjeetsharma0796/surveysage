@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Poll</title>
+    <link rel="stylesheet" href="styles1.css">
+</head>
+<body>
+    <div class="poll-container">
+        <div class="poll-header">
+            <h2>Create Poll</h2>
+            <div class="add-button" onclick="addOption()">+</div>
+        </div>
+        <form id="poll-form">
+            <input type="text" name="question" placeholder="Poll Question" required>
+            <div id="options">
+                <input type="text" name="option1" placeholder="Option 1" required>
+                <input type="text" name="option2" placeholder="Option 2" required>
+            </div>
+            <button type="submit">Create Poll</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

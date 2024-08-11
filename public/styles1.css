@@ -1,0 +1,89 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+.logo {
+    width: 50px;                /* Width of the circle */
+    height: 50px;               /* Height of the circle */
+    border-radius: 50%;          /* Makes the div a circle */
+    overflow: hidden;            /* Ensures the image stays within the circle */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+}
+
+.logo img {
+    width: 100%;                 /* Image will fill the entire circle */
+    height: 100%;                /* Image will fill the entire circle */
+    object-fit: cover;           /* Ensures the image covers the circle without distortion */
+}
+
+.logo:hover {
+    box-shadow: 0 6px 12px rgb(255, 255, 255); /* Slightly stronger shadow on hover */
+}
+
+
+.poll-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+.poll-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.poll-header h2 {
+    margin: 0;
+}
+
+.add-button {
+    background-color: #007bff;
+    color: #fff;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 24px;
+    line-height: 1;
+}
+
+form {
+    margin-top: 20px;
+}
+
+input[type="text"] {
+    width: calc(100% - 10px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+button[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Poll Pulse</title>
+    <link rel="stylesheet" href="p1.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo"><img src="./logo.svg" alt="" /></div>
+      <nav class="nav">
+        <ul>
+          <li><a href="/create">Create Poll</a></li>
+          <li><a href="/view-polls">View Polls</a></li>
+          <li><a href="/profile">Profile</a></li>
+          <li><a href="#about">About</a></li>
+          <button id="connect-button" class="neon-button">
+            Connect to MetaMask
+          </button>
+        </ul>
+      </nav>
+    </header>
+    <main class="main-content">
+      <section id="create-poll" class="content-section">
+        <h2 class="neon">Create Poll</h2>
+        <form id="create-poll-form">
+          <input
+            type="text"
+            id="poll-question"
+            placeholder="Poll Question"
+            required
+          />
+          <div id="poll-options-container">
+            <input
+              type="text"
+              class="poll-option-input"
+              placeholder="Poll Option"
+              required
+            />
+          </div>
+          <button type="button" id="add-option-button" class="neon-button">
+            Add Option
+          </button>
+          <button type="submit" class="neon-button">Create Poll</button>
+        </form>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer-section">
+        <h3>Company</h3>
+        <ul>
+          <li>About Us</li>
+          <li>Our Team</li>
+          <li>Careers</li>
+          <li>News</li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Products</h3>
+        <ul>
+          <li>Web3 Polls</li>
+          <li>Blockchain Analytics</li>
+          <li>Decentralized Apps</li>
+          <li>Crypto Wallet</li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Resources</h3>
+        <ul>
+          <li>Blog</li>
+          <li>Documentation</li>
+          <li>Developer Tools</li>
+          <li>Community</li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Legal</h3>
+        <ul>
+          <li>Privacy Policy</li>
+          <li>Terms of Service</li>
+          <li>Cookie Policy</li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Contact</h3>
+        <ul>
+          <li>Support</li>
+          <li>Sales</li>
+          <li>Partnerships</li>
+        </ul>
+      </div>
+    </footer>
+    <div id="success-message" class="success-message">
+      Poll Created Successfully!
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+    <script src="p1.js"></script>
+  </body>
+</html>
