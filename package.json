@@ -9,7 +9,7 @@
     "clean": "npx hardhat clean",
     "deploy:hh": "  ",
     "deploy:scrollTestnet": "npx hardhat run --network scrollTestnet scripts/deploy.ts",
-    "deploy:transfer": "npx hardhat run --network scrollTestnet scripts/existing_contract_use.ts"
+    "deploy:transfer": "npx hardhat run --network opencampus scripts/existing_contract_use.ts"
   },
   "devDependencies": {
     "@ethersproject/abi": "^5.4.7",
@@ -36,5 +36,8 @@
   },
   "dependencies": {
     "@openzeppelin/contracts": "^5.0.2"
+  },
+  "engines": {
+    "node": ">=14.0.0 <=18.x"
   }
 }
