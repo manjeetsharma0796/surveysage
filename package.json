@@ -36,8 +36,5 @@
   },
   "dependencies": {
     "@openzeppelin/contracts": "^5.0.2"
-  },
-  "engines": {
-    "node": ">=14.0.0 <=18.x"
   }
 }
