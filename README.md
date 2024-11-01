@@ -3,15 +3,17 @@
 yarn install 
 npm install
 
-Add this token as manually into your wallet OPENCT
+Add this token as manually into your wallet SAGE Token
 
-Contract Address = 0xDA43Ac0F6301e8f69a3D65Ae26C7C7948244a346
+Contract Address = 0xfd34179CCa56e3BA2D43dd57a26C9766D76E6Ae1
+
+[Verify SAGE Token](https://testnet.aiascan.com/token/0xfd34179CCa56e3BA2D43dd57a26C9766D76E6Ae1)
 
 ------------
 
-# About Project (Build on Opencampus Chain)
+# About Project (Build on AIA Chain)
 
-- Surveysage is a dynamic token-based polling platform build on opencampus network that rewards users for sharing their valuable opinions. 
+- Surveysage is a dynamic token-based polling platform build on AIA network that rewards users for sharing their valuable opinions. 
 
 - With surveysage, users can earn tokens by participating in polls and contributing their insights. 
 
